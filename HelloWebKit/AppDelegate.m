@@ -27,6 +27,9 @@
     // load via request
     NSString* filePath = [[NSBundle mainBundle] pathForResource: @"index" ofType: @"html" inDirectory :@"contents"];
     [self.webView.mainFrame loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
+    
+    // toggle full screen
+    [self.window toggleFullScreen:@""];
 }
 
 @end
